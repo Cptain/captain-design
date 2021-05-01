@@ -1,0 +1,16 @@
+.footer {
+    &__name {
+      font-size: 0.8em;
+    }
+  
+    &__link {
+      color: #111;
+  
+      i {
+        transition: 400ms;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }

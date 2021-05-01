@@ -1,0 +1,19 @@
+.main {
+    &__img {
+        border-radius: 15px !important;
+    }
+}
+
+.main .container {
+    .row {
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 991px) {
+    .main {
+        &__img {
+            margin-bottom: 4em;
+        }
+    }
+}

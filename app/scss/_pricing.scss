@@ -1,0 +1,50 @@
+.pricing {
+    padding: 7em 0 3em;
+}
+
+.card {
+    background-color: #faa538;
+
+    &-header {
+        text-shadow: 0 1px 3px rgba(47, 27, 0, 0.75);
+        color      : #fff;
+    }
+
+    &-pro {
+        background-color: #ffbf6b;
+        transform       : scale(1.4);
+        position        : relative;
+        z-index         : 1;
+        box-shadow      : 0 3px 12px rgba(47, 27, 0, 0.35);
+    }
+
+    &-title-pro {
+        text-decoration: line-through;
+        color          : #d39340;
+    }
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5em;
+}
+
+.btn-starter {
+    transform: translateY(3em);
+}
+
+@media (max-width: 768px) {
+    .card {
+        &-deck {
+            flex-flow : column wrap;
+            text-align: center;
+        }
+
+        &-pro {
+            transform: scale(1);
+        }
+    }
+
+    .btn-starter {
+        transform: translateY(0);
+    }
+}
