@@ -57,18 +57,3 @@
         }
     }
 }
-
-@media (max-width: 540px) {
-    .navbar {
-        flex-direction: column;
-
-        &__link {
-            margin-bottom: 1em;
-        }
-
-        &__logo {
-            width: 125px;
-            margin-bottom: 1em;
-        }
-    }
-}
