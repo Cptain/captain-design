@@ -1,21 +1,37 @@
 .navbar {
-    justify-content: space-evenly;
-  
-    &__logo {
-      max-width: 150px;
-    }
-  
-    &__link {
-      border-bottom : 0px solid;
-      transition    : all 100ms;
-      padding-bottom: .25em;
-  
-      &:hover {
-        border-bottom: 4px solid #faa538;
-      }
+  justify-content: space-evenly;
+
+  &__logo {
+    max-width: 150px;
+    width    : 150px;
+  }
+
+  &__link {
+    border-bottom : 0px solid;
+    transition    : all 100ms;
+    padding-bottom: .25em;
+
+    &:hover {
+      border-bottom: 4px solid #faa538;
     }
   }
-  
+
   li {
     list-style-type: none;
   }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    flex-direction: column;
+
+    &__link {
+      margin-bottom: 1em;
+    }
+
+    &__logo {
+      width        : 125px;
+      margin-bottom: 1em;
+    }
+  }
+}
